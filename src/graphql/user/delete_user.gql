@@ -1,0 +1,4 @@
+# 用户删除
+mutation deleteUser ($input: [ID]) {
+  data: deleteOauthUser (input: $input)
+}

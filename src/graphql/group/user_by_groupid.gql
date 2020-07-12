@@ -1,0 +1,26 @@
+# 根据分组Id  获取组内成员 
+query authSelectUserByGroupId ($input: AuthGroupInput!) {
+  data: authSelectUserByGroupId (input: $input) {
+    total
+    offset
+    limit
+    data {
+      userId
+      username
+      name
+      password
+      phoneNumber
+      enabled
+      email
+      jobNumber
+      roleName
+      position
+      tenantManager
+      systemManager
+      organizations {
+        organizationId
+        organizationName
+      }
+    }
+  }
+}

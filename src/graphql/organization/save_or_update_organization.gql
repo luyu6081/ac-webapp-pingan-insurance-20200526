@@ -1,0 +1,4 @@
+# 机构添加和修改
+mutation saveOrUpdateOrganization ($input: AuthOrganizationInput!) {
+  data: saveOrUpdateOauthOrganization (input: $input)
+}

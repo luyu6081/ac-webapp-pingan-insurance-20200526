@@ -1,0 +1,9 @@
+query tenantLevel {
+  data: selectTenantLevel {
+    tenantLevel
+    description
+    id
+    userCount
+    status
+  }
+}

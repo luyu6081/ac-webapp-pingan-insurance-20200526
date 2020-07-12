@@ -1,0 +1,4 @@
+# 分组删除
+mutation deleteGroup ($input: [ID!]!) {
+  data: deleteOauthGroup (input: $input)
+}

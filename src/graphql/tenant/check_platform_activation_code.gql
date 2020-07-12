@@ -1,0 +1,7 @@
+# 平台用户激活码
+query checkPlatformCode ($activityCode: String) {
+  data: checkPlatformCode (activityCode: $activityCode) {
+    tenantUseCount
+    endTime
+  }
+}

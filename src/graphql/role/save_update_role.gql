@@ -1,0 +1,4 @@
+# 角色树形新增/修改
+mutation saveOrUpdateRole ($input: AuthSaveRoleInput!) {
+  data: saveUpdateOauthRole (input: $input)
+}

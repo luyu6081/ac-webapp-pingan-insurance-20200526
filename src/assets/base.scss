@@ -1,0 +1,247 @@
+@tailwind base;
+
+/*a 标签初始化*/
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+html, body {
+  @apply h-screen font-sans antialiased;
+
+  font-size: 14px;
+  background-color: theme('colors.gray.lighter');
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+svg {
+  @apply fill-current;
+}
+
+@tailwind utilities;
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.filter {
+  @apply bg-white fixed flex items-center;
+
+  top: 70px;
+  left: 30px;
+  right: 30px;
+  height: 55px !important;
+  padding: 15px 20px 0;
+  
+  .ej-search-input {
+    width: 522px !important;
+    height: 38px !important;
+
+    .el-input__inner {
+      line-height: 36px !important;
+    }    
+  }
+}
+
+.my-aside-main {
+  .ej-search-input {
+    width: 288px !important;
+    height: 38px !important;
+
+    .el-input__inner {
+      line-height: 36px !important;
+    }    
+  }
+}
+
+.stateBlueColor {
+  color: #2ecc71;
+}
+
+.stateRedColor {
+  color: #b94a48;
+}
+
+.mt-sm {
+  margin-top: 10px;
+}
+
+// .mr-sm {
+//   margin-right: 10px;
+// }
+
+.btn {
+  @apply flex items-center justify-center;
+
+  padding: 0 5px;
+}
+
+.btn-disabled {
+  @apply shadow rounded text-sm text-white;
+
+  margin-right: 10px;
+  width: 58px;
+  height: 22px;
+  background-color: #c8c9cc;
+
+  &:hover {
+    color: #fff;
+    cursor: not-allowed;
+  }
+}
+
+.btn-normal {
+  @apply bg-blue-lighter shadow rounded text-sm text-blue;
+
+  margin-right: 10px;
+  width: 58px;
+  height: 22px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+}
+
+.btn-normal:hover {
+  @apply bg-blue text-white;
+}
+
+.empty-content {
+  @apply bg-white flex items-center justify-center;
+}
+
+.my-autocomplete {
+  li {
+    line-height: normal;
+    padding: 7px;
+
+    .name {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .addr {
+      font-size: 12px;
+      color: #b4b4b4;
+    }
+
+    .highlighted .addr {
+      color: #ddd;
+    }
+  }
+}
+
+.user-list-view, .operates-user-view, .tenant-list-view, .shortcut-menu-view, .authority-audit-view, .role-setting-view, .organization-list-view, .group-list-view {
+  > ::before {
+    content: '';
+    position: fixed;
+    z-index: 10;
+    top: 50px;
+    right: 30px;
+    left: 30px;
+    border-top: 20px solid theme('colors.gray.lighter');
+  }
+}
+
+.dialogVisible {
+  .el-dialog__header {
+    text-align: center;
+  }
+
+  .el-button {
+    padding: 0;
+    width: 64px;
+    height: 32px;
+  }
+
+  .el-dialog__body {
+    padding: 40px 40px 20px 75px;
+    min-height: 357px;
+
+    .el-form-item__label {
+      line-height: 15px;
+      padding-bottom: 3px;
+    }
+
+    .pinline {
+      .el-form-item__content {
+        line-height: 29px;
+      }
+    }
+
+    .password-item {
+      .el-input__suffix {
+        top: -5px;
+      }
+    }
+
+    .el-input--suffix {
+      width: 240px;
+
+      .el-input__suffix {
+        top: 5px;
+      }
+
+      &.is-focus {
+        .el-input__suffix {
+          top: -6px;
+        }
+      }
+    }
+
+    .el-input-number {
+      width: 160px;
+      line-height: 29px;
+
+      span {
+        height: 26px;
+        line-height: 26px;
+      }
+
+      .el-input__inner {
+        width: 160px;
+      }
+    }
+
+    .el-input__inner {
+      width: 240px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 4px;
+    }
+
+    .el-cascader {
+      line-height: 29px;
+      .el-input--suffix {  
+        .el-input__suffix {
+          top: -6px;
+        }
+  
+        &.is-focus {
+          .el-input__suffix {
+            top: 5px;
+          }
+        }
+      }
+    }
+
+    .el-textarea {
+      width: 630px;
+      height: 157px;
+
+      .el-textarea__inner {
+        width: 630px;
+        height: 157px;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .el-dialog__footer {
+    width: 815px;
+    padding:0px 20px 50px 20px;
+    margin: 0 auto;
+  }
+}

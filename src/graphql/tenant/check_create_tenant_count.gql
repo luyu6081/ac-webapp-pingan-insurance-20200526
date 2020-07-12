@@ -1,0 +1,4 @@
+# 可创建租户数量是否达上限
+query checkCreateTenantCount {
+  data: checkTenantCount
+}

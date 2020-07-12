@@ -1,0 +1,4 @@
+# 功能权限新增/修改
+mutation saveOrUpdatePermission ($input: AuthPermissionSaveInput!) {
+  data: saveOrUpdatePermissionByRoleId (input: $input)
+}

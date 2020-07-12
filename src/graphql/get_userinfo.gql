@@ -1,0 +1,18 @@
+# 用户登录
+query getUserinfo {
+  data: getLoginUser {
+    userId
+    tenantId
+    tenantName
+    name
+    username
+    avatar: userAvatar
+    permissionCodes
+    tenantLevel
+    organizations {
+      organizationId
+      organizationName
+    }
+    appKeys
+  }
+}

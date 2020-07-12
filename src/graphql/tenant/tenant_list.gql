@@ -1,0 +1,21 @@
+query tenantList ($input: AuthTenantParamInput) {
+  data: selectAllTenant (input: $input) {
+    tenantId
+    tenantCode
+    tenantName
+    tenantDesc
+    username
+    password
+    status
+    # demo环境要去掉enabled
+    enabled
+    managerName
+    managerPhone
+    managerMail
+    tenantLevelId
+    tenantInfoVO {
+      drdManager
+      tenantId
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# 校验用户-登录用户是否存在
+query checkUser ($username: String!, $userId: ID) {
+  data: checkUserName (username: $username, userId: $userId)
+}

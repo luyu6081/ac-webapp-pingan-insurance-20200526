@@ -1,0 +1,4 @@
+# 给分组：批量添加用户
+query saveOrUpdateUserGroup ($input: OauthUserGroupDTO) {
+  data: saveOrUpdateUserGroup (input: $input)
+}

@@ -1,0 +1,4 @@
+# 快捷菜单删除
+mutation deleteShortcutMenu ($input: [ID!]!) {
+  data: deleteDateType (input: $input)
+}

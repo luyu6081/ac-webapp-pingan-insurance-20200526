@@ -1,0 +1,4 @@
+# 检验当前租户是否满足创建用户的级别
+query checkTenantLevel {
+  data: checkTenantLevel
+}

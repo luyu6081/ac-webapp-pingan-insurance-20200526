@@ -1,0 +1,29 @@
+query userList($input: AuthUserNamePageInput) {
+  data: authSelectAllUser (input: $input) {
+    offset
+    limit
+    total
+    data {
+      userId
+      username
+      name
+      password
+      phoneNumber
+      enabled
+      email
+      jobNumber
+      roleName
+      position
+      tenantManager
+      systemManager
+      organizations {
+        organizationId
+        organizationName
+      }
+      groups {
+        groupId
+        groupName
+      }
+    }
+  }
+}

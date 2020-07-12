@@ -1,0 +1,7 @@
+query selectTenantInfo ($input: TenantInfoDTO!) {
+  data: selectTenantInfo (input: $input) {
+    virtualCurrency
+    creator
+    drdManager
+  }
+}

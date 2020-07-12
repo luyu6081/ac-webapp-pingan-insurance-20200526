@@ -1,0 +1,4 @@
+# 租户启用或禁用
+mutation updateTenantStatus ($input: AuthTenantStatusInput!) {
+  data: updateTenantStatus (input: $input)
+}

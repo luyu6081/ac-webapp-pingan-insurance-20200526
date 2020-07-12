@@ -1,0 +1,4 @@
+# 分组添加和修改
+mutation saveOrUpdateGroup ($input: AuthGroupSaveInput!) {
+  data: saveOrUpdateOauthGroup (input: $input)
+}

@@ -1,0 +1,29 @@
+
+.app-pagination {
+  $border-color: #d9d9d9;
+
+  /* override element-ui's style */
+
+  .btn-prev,
+  .btn-next,
+  .number {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    line-height: 32px - 2px;
+    font-size: 14px;
+    border: 1px solid $border-color;
+    border-radius: 6px !important;
+    background: theme('colors.white') !important;
+    margin: 0 4px !important;
+  }
+
+  .number.active {
+    border-color: transparent;
+    background: theme('colors.blue.default') !important;
+
+    + .number {
+      border-left: 1px solid $border-color;
+    }
+  }
+}

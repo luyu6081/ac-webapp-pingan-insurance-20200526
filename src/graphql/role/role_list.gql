@@ -1,0 +1,8 @@
+query userRoleList {
+  data: selectAllRole {
+    id
+    roleName
+    roleCode
+    parentId
+  }
+}

@@ -1,0 +1,15 @@
+# 获取用户列表: 租户/机构/分组中用到
+query userListNoAuth($input: AuthUserParamInput) {
+  data: authSelectUserByNameOrCard (input: $input) {
+    userId
+    username
+    name
+    password
+    phoneNumber
+    email
+    jobNumber
+    roleName
+    title
+    position
+  }
+}

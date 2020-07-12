@@ -1,0 +1,7 @@
+{
+  "VUE_APP_GRAPHQL_HTTP": "http://auth-frontier.dev.jinxin.cloud/graphql",
+  "VUE_APP_LOGIN_URL": "http://login.dev.jinxin.cloud/",
+  "VUE_APP_AUTH_FRONTIER_URL": "http://auth-frontier.dev.jinxin.cloud/",
+  "VUE_APP_USE_BUTTON_FLAG": true,
+  "VUE_APP_LOGOUT_URL": ""
+}

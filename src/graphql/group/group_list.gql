@@ -1,0 +1,11 @@
+query groupList ($input: AuthGroupInput) {
+  data: selectAllGroup (input: $input) {
+    groupId
+    groupName
+    groupDesc
+    username
+    managerName
+    managerPhone
+    managerMail
+  }
+}

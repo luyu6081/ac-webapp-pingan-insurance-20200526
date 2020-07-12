@@ -1,0 +1,4 @@
+# 租户添加
+mutation saveTenant ($input: OauthRegisterTenantInput!) {
+  data: saveTenantUser (input: $input)
+}

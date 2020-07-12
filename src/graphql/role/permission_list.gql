@@ -1,0 +1,8 @@
+query permissionList ($input: AuthRoleIdInput!) {
+  data: selectPermissionByRoleId (input: $input) {
+    permissionId
+    permissionName
+    parentId
+    flag
+  }
+}

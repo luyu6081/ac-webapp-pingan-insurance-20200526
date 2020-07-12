@@ -1,0 +1,4 @@
+# 快捷菜单添加和修改
+mutation saveOrUpdateShortcutMenu ($input: AppDataTypeParamInput!) {
+  data: saveOrUpdateDataType (input: $input)
+}

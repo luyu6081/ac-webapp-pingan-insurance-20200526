@@ -1,0 +1,7 @@
+query organizationNameList {
+  data: selectAllOrganizationName {
+    id
+    parentId
+    organizationName
+  }
+}

@@ -1,0 +1,11 @@
+query userList ($input: AuthRoleIdInput) {
+  data: selectUserByRoleId (input: $input) {
+    username
+    name
+    jobNumber
+    title
+    roleName
+    phoneNumber
+    email
+  }
+}

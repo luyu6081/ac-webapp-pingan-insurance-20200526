@@ -1,0 +1,7 @@
+# 租户激活码
+query checkActivationCode ($activationCode: String) {
+  data: checkActivationCode (activationCode: $activationCode) {
+    tenantLevel
+    tenantLevelName
+  }
+}

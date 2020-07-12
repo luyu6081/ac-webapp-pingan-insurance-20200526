@@ -1,0 +1,4 @@
+# 角色树形删除
+mutation deleteRole ($input: [ID!]!) {
+  data: deleteOauthRole (input: $input)
+}

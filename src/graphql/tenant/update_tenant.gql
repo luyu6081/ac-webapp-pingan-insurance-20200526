@@ -1,0 +1,4 @@
+# 租户修改
+mutation updateTenant ($input: OauthUpdateTenantInput!) {
+  data: updateTenantUser (input: $input)
+}

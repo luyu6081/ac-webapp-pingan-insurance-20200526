@@ -1,0 +1,4 @@
+# 快捷菜单移动
+mutation moveShortcutMenu ($input: AppDataOperationInput!) {
+  data: operationDataType (input: $input)
+}

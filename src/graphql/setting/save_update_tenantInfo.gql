@@ -1,0 +1,4 @@
+# 海贝充值、资源目录主要单位
+mutation saveOrUpdateTenantInfo ($input: [TenantInfoDTO]) {
+  data: saveOrUpdateTenantInfo (input: $input)
+}

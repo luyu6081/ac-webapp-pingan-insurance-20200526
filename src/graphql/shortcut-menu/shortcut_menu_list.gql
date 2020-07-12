@@ -1,0 +1,11 @@
+query kjList ($input: AppDataTypeInput) {
+  data: selectAllDataType (input: $input) {
+    dataTypeId
+    dataTypeName
+    url
+    level
+    orderNumber
+    jumpMode
+    parentId
+  }
+}

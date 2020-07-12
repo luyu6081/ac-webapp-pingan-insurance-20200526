@@ -1,0 +1,4 @@
+# 用户添加
+mutation saveUser ($input: OauthSaveUserDTO!) {
+  data: registerUser (input: $input)
+}

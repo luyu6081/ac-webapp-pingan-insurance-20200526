@@ -1,0 +1,4 @@
+# 机构删除
+mutation deleteOrganization ($input: [ID!]!) {
+  data: deleteOauthOrganization (input: $input)
+}
